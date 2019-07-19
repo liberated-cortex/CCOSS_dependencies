@@ -22,7 +22,7 @@ fi
 ./allegro.sh
 ./lua.sh
 ./minizip.sh
-./bsd.sh
+./libbsd.sh
 
 ZLIB_DIR=$PWD/zlib-1.2.11
 PNG_DIR=$PWD/libpng-1.6.37
@@ -57,5 +57,5 @@ pushd $PWD/prepared
     cp $SNDIO_DIR/libsndio.a .
 popd
 mkdir libs
-cp -t $PWD/libs $ALLEGRO_DIR/install/lib/*
+cp -t $PWD/libs $ALLEGRO_DIR/install/lib/liballeg.*
 
