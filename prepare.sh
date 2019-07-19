@@ -1,4 +1,19 @@
 #!/bin/bash
+
+if `hash automake 2> /dev/null`; then
+    echo "Autotools is IS installed."
+else
+    echo "Autotools is NOT installed. Exiting."
+    exit
+fi
+
+if `hash cmake 2> /dev/null`; then
+    echo "CMake is IS installed."
+else
+    echo "CMake is NOT installed. Exiting."
+    exit
+fi
+
 ./zlib.sh
 ./libpng.sh
 ./libogg.sh
