@@ -37,6 +37,8 @@ BSD_DIR=$PWD/libbsd-0.9.1
 mkdir $PWD/prepared
 mkdir $PWD/prepared/include
 pushd $PWD/prepared
+    cp $ALLEGRO_DIR/install/lib/liballeg* .
+    cp -r $ALLEGRO_DIR/install/include .
     cp $BSD_DIR/install/lib/libbsd.a .
     cp -r $BSD_DIR/install/include .
     cp $ZLIB_DIR/install/lib/libz.a .
@@ -56,6 +58,4 @@ pushd $PWD/prepared
     cp -r $MINIZIP_DIR/install/include .
     cp $SNDIO_DIR/libsndio.a .
 popd
-mkdir libs
-cp -t $PWD/libs $ALLEGRO_DIR/install/lib/liballeg.*
 
