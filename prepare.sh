@@ -22,6 +22,7 @@ fi
 ./allegro.sh
 ./lua.sh
 ./minizip.sh
+./bsd.sh
 
 ZLIB_DIR=$PWD/zlib-1.2.11
 PNG_DIR=$PWD/libpng-1.6.37
@@ -31,10 +32,13 @@ SNDIO_DIR=$PWD/sndio-1.5.0/libsndio
 ALLEGRO_DIR=$PWD/allegro5-4.4.3.1
 LUA_DIR=$PWD/lua-5.1.5
 MINIZIP_DIR=$PWD/minizip-1.2
+BSD_DIR=$PWD/libbsd-0.9.1
 
 mkdir $PWD/prepared
 mkdir $PWD/prepared/include
 pushd $PWD/prepared
+    cp $BSD_DIR/install/lib/libbsd.a .
+    cp -r $BSD_DIR/install/include .
     cp $ZLIB_DIR/install/lib/libz.a .
     cp -r $ZLIB_DIR/install/include .
     cp $PNG_DIR/install/lib/libpng16.a .

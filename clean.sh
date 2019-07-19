@@ -7,9 +7,14 @@ SNDIO_DIR=$PWD/sndio-1.5.0/libsndio
 ALLEGRO_DIR=$PWD/allegro5-4.4.3.1
 LUA_DIR=$PWD/lua-5.1.5
 MINIZIP_DIR=$PWD/minizip-1.2
+BSD_DIR=$PWD/libbsd-0.9.1
 
 rm -r prepared
 
+pushd $BSD_DIR
+    make clean
+    rm -r install/
+popd
 pushd $ZLIB_DIR
     make clean
     rm -r install/
