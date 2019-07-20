@@ -13,8 +13,7 @@ GORILLA_AUDIO_DIR=$PWD/GorillaAudio
 rm -r prepared
 
 pushd $GORILLA_AUDIO_DIR
-    rm -r objs/
-    rm libgorillaaudio.a
+    rm -r build/build
 popd
 pushd $BSD_DIR
     make clean
