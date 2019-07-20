@@ -8,9 +8,14 @@ ALLEGRO_DIR=$PWD/allegro5-4.4.3.1
 LUA_DIR=$PWD/lua-5.1.5
 MINIZIP_DIR=$PWD/minizip-1.2
 BSD_DIR=$PWD/libbsd-0.9.1
+GORILLA_AUDIO_DIR=$PWD/GorillaAudio
 
 rm -r prepared
 
+pushd $GORILLA_AUDIO_DIR
+    rm -r objs/
+    rm libgorillaaudio.a
+popd
 pushd $BSD_DIR
     make clean
     rm -r install/

@@ -23,6 +23,7 @@ fi
 ./lua.sh
 ./minizip.sh
 ./libbsd.sh
+./GorillaAudio.sh
 
 ZLIB_DIR=$PWD/zlib-1.2.11
 PNG_DIR=$PWD/libpng-1.6.37
@@ -33,10 +34,13 @@ ALLEGRO_DIR=$PWD/allegro5-4.4.3.1
 LUA_DIR=$PWD/lua-5.1.5
 MINIZIP_DIR=$PWD/minizip-1.2
 BSD_DIR=$PWD/libbsd-0.9.1
+GORILLA_AUDIO_DIR=$PWD/GorillaAudio
 
 mkdir $PWD/prepared
 mkdir $PWD/prepared/include
 pushd $PWD/prepared
+    cp $GORILLA_AUDIO_DIR/libgorillaaudio.a .
+    cp -r $GORILLA_AUDIO_DIR/include .
     cp $ALLEGRO_DIR/install/lib/liballeg* .
     cp -r $ALLEGRO_DIR/install/include .
     cp $BSD_DIR/install/lib/libbsd.a .
