@@ -39,7 +39,7 @@ GORILLA_AUDIO_DIR=$PWD/GorillaAudio
 mkdir $PWD/prepared
 mkdir $PWD/prepared/include
 pushd $PWD/prepared
-    cp $GORILLA_AUDIO_DIR/libgorillaaudio.a .
+    cp $GORILLA_AUDIO_DIR/build/build/libgorilla.a .
     cp -r $GORILLA_AUDIO_DIR/include .
     cp $ALLEGRO_DIR/install/lib/liballeg* .
     cp -r $ALLEGRO_DIR/install/include .
