@@ -51,6 +51,6 @@ pushd $PWD/prepared
     cp $MINIZIP_DIR/install/lib/libaes.a .
     cp $MINIZIP_DIR/install/lib/libminizip.a .
     cp -r $MINIZIP_DIR/install/include .
-    cp $SNDIO_DIR/libsndio.a .
+    cp $SNDIO_DIR/libsndio/libsndio.a .
 popd
 
