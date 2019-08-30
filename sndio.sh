@@ -1,6 +1,7 @@
 #!/bin/bash
+source dirs.sh
 
-pushd $PWD/sndio-1.6.0
+pushd $SNDIO_DIR
     ./configure --prefix=$PWD/install
     make
     make install

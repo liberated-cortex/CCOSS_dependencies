@@ -1,6 +1,7 @@
 #!/bin/bash
+source dirs.sh
 
-pushd $PWD/GorillaAudio
+pushd $GORILLA_AUDIO_DIR
     cd build
     mkdir build
     cd build

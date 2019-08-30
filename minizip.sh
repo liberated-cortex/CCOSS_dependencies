@@ -1,6 +1,7 @@
 #!/bin/bash
+source dirs.sh
 
-pushd $PWD/minizip-1.2
+pushd $MINIZIP_DIR
     mkdir build
     cd build
     cmake -DCMAKE_INSTALL_PREFIX=$PWD/../install ../

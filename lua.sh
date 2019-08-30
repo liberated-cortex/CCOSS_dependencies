@@ -1,6 +1,7 @@
 #!/bin/bash
+source dirs.sh
 
-pushd $PWD/lua-5.1.5
+pushd $LUA_DIR
     make linux
     make install
 popd

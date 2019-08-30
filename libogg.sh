@@ -1,6 +1,7 @@
 #!/bin/bash
+source dirs.sh
 
-pushd $PWD/libogg-1.3.3
+pushd $OGG_DIR
     ./autogen.sh
     ./configure --prefix=$PWD/install --enable-shared=no
     make
